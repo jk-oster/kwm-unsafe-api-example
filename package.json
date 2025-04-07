@@ -4,12 +4,15 @@
   "description": "an example for bad and usafe code",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0",
     "sqlite3": "^5.1.7"
   }
 }

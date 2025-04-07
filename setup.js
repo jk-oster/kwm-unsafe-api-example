@@ -8,7 +8,8 @@ db.serialize(() => {
   db.run(`CREATE TABLE users (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     username TEXT,
-    email TEXT
+    email TEXT,
+    password TEXT
   )`);
 
   db.run(`CREATE TABLE comments (
@@ -16,7 +17,7 @@ db.serialize(() => {
     body TEXT
   )`);
 
-  db.run(`INSERT INTO users (username, email) VALUES ('admin', 'admin@example.com')`);
+  db.run(`INSERT INTO users (username, email, password) VALUES ('admin', 'admin@example.com', 'password123')`);
 });
 
 db.close();
